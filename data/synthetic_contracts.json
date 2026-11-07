@@ -1,0 +1,46 @@
+[
+  {
+    "id": "RR-001",
+    "expect": "ok",
+    "text": "Contract: C-1001\nCustomer: Acme Corp\nTransaction price: 120000.00\nObligation: SaaS subscription | 90000 | over_time | 2026-01-01 | 2026-12-31\nObligation: Onboarding | 10000 | point_in_time | 2026-02-15",
+    "expect_total_by_period": {"2026-01": "9000.00", "2026-02": "21000.00", "2026-12": "9000.00"}
+  },
+  {
+    "id": "RR-002",
+    "expect": "ok",
+    "text": "Contract: C-1002\nCustomer: Brightline Ltd\nTransaction price: 10000.00\nObligation: Support | 6000 | over_time | 2026-03-01 | 2026-05-31\nObligation: Hardware | 4000 | point_in_time | 2026-03-10",
+    "expect_total_by_period": {"2026-03": "6000.00", "2026-04": "2000.00", "2026-05": "2000.00"}
+  },
+  {
+    "id": "RR-003",
+    "expect": "ok",
+    "text": "Contract: C-1003\nCustomer: Harbor Retail\nTransaction price: 100.00\nObligation: License | 1 | point_in_time | 2026-06-01\nObligation: Training | 2 | point_in_time | 2026-06-15\nObligation: Support | 1 | over_time | 2026-06-01 | 2026-06-30",
+    "expect_total_by_period": {"2026-06": "100.00"}
+  },
+  {
+    "id": "RR-004",
+    "expect": "ok",
+    "text": "Contract: C-1004\nCustomer: Northwind Cloud\nTransaction price: 1000.00\nObligation: Platform access | 3 | over_time | 2026-01-01 | 2026-03-31\nObligation: Setup | 1 | point_in_time | 2026-01-10\nObligation: Report pack | 2 | point_in_time | 2026-02-01",
+    "expect_total_by_period": {"2026-01": "333.33", "2026-02": "500.00", "2026-03": "166.67"}
+  },
+  {
+    "id": "RR-005",
+    "expect": "invalid",
+    "text": "Contract: C-1005\nCustomer: Pemberton & Co\nTransaction price: 5000.00\nObligation: Advisory | 3000 | over_time | 2026-09-30 | 2026-09-01\nObligation: Filing | 2000 | point_in_time | 2026-09-15"
+  },
+  {
+    "id": "RR-006",
+    "expect": "invalid",
+    "text": "Contract: C-1006\nCustomer: Delta Freight\nTransaction price: 8000.00\nObligation: Maintenance | 4000 | over_time | 2026-01-01 | 2026-12-31\nObligation: Install | 4000 | sometime | 2026-02-01"
+  },
+  {
+    "id": "RR-007",
+    "expect": "invalid",
+    "text": "Contract: C-1007\nCustomer: Sunrise Clinic\nTransaction price: 2000.00\nObligation: Monitoring | 1000 | over_time | 2026-13-01 | 2026-12-31\nObligation: Setup | 1000 | point_in_time | 2026-04-01"
+  },
+  {
+    "id": "RR-008",
+    "expect": "invalid",
+    "text": "Contract: C-1008\nCustomer: Oakline Partners\nObligation: Consulting | 1000 | point_in_time | 2026-05-01"
+  }
+]
